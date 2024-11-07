@@ -46,6 +46,7 @@ for i in range(len(ext)):  # nak loop ext
 
 
 # Print the result
-print(len(cutLi))
+
 for sublist in cutLi:
     print(sublist)
+print(f"\nQuantity yang diperlukan adalah {len(cutLi)}\n")
