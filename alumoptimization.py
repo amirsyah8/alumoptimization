@@ -1,18 +1,6 @@
-"""
-import pandas as pd
-
-# Read data from Excel file
-df = pd.read_excel('your_file.xlsx', header=None)  # Adjust the path to your Excel file
-
-# Convert the values in the first column to a list
-ext = df[0].tolist()
-
-# Print the extracted data
-print("Extracted data from Excel:", ext)
-"""
-ext = [1200, 500, 4090, 3200, 200,110,2900,120]
+ext = [5600, 5600, 5600, 1200, 1200, 400, 400, 2500, 2500, 2500, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]
 cutLi = []
-rawMate = 6100
+rawMate = 5600
 
 
 for i in range(len(ext)):  # nak loop ext
@@ -24,8 +12,7 @@ for i in range(len(ext)):  # nak loop ext
         if cutLi[count][-1] - ext[i] >= 0:
             newBalance = cutLi[count][-1] - ext[i]
             cutLi[count][-1] = ext[i]
-            if newBalance > 0:
-                cutLi[count].append(newBalance)
+            cutLi[count].append(newBalance)        
             break
         else:
             count += 1
