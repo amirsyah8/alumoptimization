@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Assuming your data is in the range A1:D100
-df = pd.DataFrame(xl("A1:D100"))  # Read data from Excel range
+df = pd.DataFrame(xl("A1:D200"))  # Read data from Excel range
 df.columns = ['Column A', 'Column B', 'Column C', 'Column D']
 
 # Convert 'Column A' and 'Column B' to numeric, replacing errors with NaN
